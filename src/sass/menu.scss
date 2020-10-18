@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-weight: bold;
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: italic;
+    src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+article {
+    font-family: "OpenSans", sans-serif;
+    margin: 20px auto;
+    padding: 6px;
+    background: #6dedba;
+    // width: 1000px;
+}
+
+article > section {
+    min-height: 100vh;
+    background: white;
+    padding: 30px;
+}
+
+.morning-surprise-logo {
+    border: 2px solid #0d0d0d;
+    background: 50% 50% / cover no-repeat url("../assets/logo.png");
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.logo-and-name-wrapper {
+    // display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-and-name-wrapper h1 {
+    align-self: center;
+    margin-left: 16px;
+}
+
+// .title {
+//     margin: 0 60px;
+// }
+
+.title p {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-style: italic;
+}
+
+header {
+    // display: flex;
+}
+
+.logo-and-name-wrapper:after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #1cebc1;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0 0 0;
+}
+
+.p-small {
+    font-size: 14px;
+}
+
+ul {
+    // list-style: none;
+    padding: 0;
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+.social-media-list li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.social-media-list li img {
+    margin-right: 6px;
+}
+
+.social-media-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.black-banner {
+    background: 50% 50% / cover no-repeat url("../assets/banner.svg");
+    width: 115px;
+    height: 200px;
+    color: white;
+    margin: 0;
+    position: relative;
+}
+
+.black-banner p {
+    margin: 40px 10px 0;
+    text-align: center;
+    position: absolute;
+    width: calc(100% - 20px);
+    top: 0;
+    left: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #debe37;
+}
